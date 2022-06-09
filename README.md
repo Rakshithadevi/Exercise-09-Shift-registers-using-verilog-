@@ -96,6 +96,8 @@ endmodule
 ## Serial Input Parallel Output (SIPO):
 
 ### RTL LOGIC  REGISTERS: 
+![image](https://user-images.githubusercontent.com/94165326/172897461-21803f93-1fd9-4de0-aabb-a1e41be8f75a.png)
+
 
 
 
@@ -106,13 +108,26 @@ endmodule
 
 
 ### TIMING DIGRAMS FOR SHIFT REGISTERS
+![image](https://user-images.githubusercontent.com/94165326/172897494-faddac53-9f31-4c04-998c-dd1c260160c2.png)
+
 
 ## Parallel Input Serial Output (PISO):
-### RTL LOGIC  REGISTERS for SIPO: 
+### RTL LOGIC  REGISTERS for SIPO:
+![image](https://user-images.githubusercontent.com/94165326/172897542-cb596e48-2719-4cd3-ba6a-7b54675ac738.png)
+
+
 ### TIMING DIGRAMS FOR SHIFT REGISTERS
+![image](https://user-images.githubusercontent.com/94165326/172897579-77a38c40-c5e2-44df-b32c-d99a27b95fbe.png)
+
+
 ## Parallel Input Parallel Output (PIPO):
 ### RTL LOGIC  REGISTERS for SIPO: 
+![image](https://user-images.githubusercontent.com/94165326/172897629-941021bf-35c3-4b01-9354-af64482ff80f.png)
+
+
 ### TIMING DIGRAMS FOR SHIFT REGISTERS
+![image](https://user-images.githubusercontent.com/94165326/172897674-29f63332-2b22-4789-8d21-19fde1aea608.png)
+
 
 
 
