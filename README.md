@@ -48,16 +48,54 @@ A Parallel in Parallel out (PIPO) shift register is used as a temporary storage 
 ### PROGRAM 
 /*
 Program for  Implementation-of Shift-registers-using-verilog-
-Developed by: 
-RegisterNumber:  
+Developed by: RAKSHITHA DEVI J
+RegisterNumber: 212221230082
 */
+Serial Input Parallel Output (SIPO):
+```
+module SIPO(SI,Clk,PO);
+input SI,Clk;
+output[0:7]PO;
+reg[0:7]temp;
+always@(posedge Clk)
+begin
+temp = {temp[0:6],SI};
+end
+assign PO = temp;
+endmodule
+```
+Parallel Input Serial Output (PISO):
+```
+module SIPO(SI,Clk,PO);
+input SI,Clk;
+output[0:7]PO;
+reg[0:7]temp;
+always@(posedge Clk)
+begin
+temp = {temp[0:6],SI};
+end
+assign PO = temp;
+endmodule
+```
+Parallel Input Parallel Output (PIPO):
+```
+module PIPO(PI,Clk,PO);
+input Clk;
+input[3:0]PI;
+output reg[3:0]PO;
+always@(posedge Clk)
+begin
+PO = PI;
+end 
+endmodule
+```
 
 
 
 
+## Serial Input Parallel Output (SIPO):
 
-
-### RTL LOGIC  REGISTERS   
+### RTL LOGIC  REGISTERS: 
 
 
 
@@ -69,6 +107,14 @@ RegisterNumber:
 
 ### TIMING DIGRAMS FOR SHIFT REGISTERS
 
+## Parallel Input Serial Output (PISO):
+### RTL LOGIC  REGISTERS for SIPO: 
+### TIMING DIGRAMS FOR SHIFT REGISTERS
+## Parallel Input Parallel Output (PIPO):
+### RTL LOGIC  REGISTERS for SIPO: 
+### TIMING DIGRAMS FOR SHIFT REGISTERS
+
+
 
 
 
@@ -77,3 +123,6 @@ RegisterNumber:
 
 
 ### RESULTS 
+Thus, PISO , PIPO, SIPO are implemented using verilog and their functionality using their functional tables is validated.
+
+
